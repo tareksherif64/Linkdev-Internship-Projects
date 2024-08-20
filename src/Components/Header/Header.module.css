@@ -1,0 +1,6 @@
+.header {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+    text-align: center;
+    padding: 20px;
+}

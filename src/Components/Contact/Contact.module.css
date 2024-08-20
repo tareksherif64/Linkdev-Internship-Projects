@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #5c715e;
+    /* Dark olive */
+    --secondary-color: #333;
+    /* Dark grey */
+    --accent-color: #b6cdbd;
+    /* Light olive */
+    --first-color: #f2f9f1;
+    /* Very light olive */
+}
+
+.contact {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 8px;
+    color: var(--first-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: var(--first-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--first-color);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--first-color);
+    color: var(--primary-color);
+}

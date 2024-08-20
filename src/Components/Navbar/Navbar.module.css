@@ -1,0 +1,18 @@
+#themeToggle {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+    background-color: #5c715e; /* Change to your preferred color */
+}
+
+/* .navbar{
+    margin-bottom: 50px;
+} */

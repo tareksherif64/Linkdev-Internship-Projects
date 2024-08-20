@@ -1,3 +1,41 @@
+/* Global Theme Variables */
+/* Dark Theme */
+:root {
+  --bg-color: #121212;
+  --card-bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --accent-color: #ff3e00;
+  --input-bg-color: #333;
+  --input-text-color: #b3b1b1;
+  --table-row-border-color: #444;
+}
+
+/* Light Theme */
+.light-theme {
+  --bg-color: #f5f5f5;
+  --card-bg-color: #ffffff;
+  --text-color: #121212;
+  --accent-color: #ff4500;
+  --input-bg-color: #ffffff;
+  --input-text-color: #121212;
+  --table-row-border-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +73,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  max-width: 800px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.childCard {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

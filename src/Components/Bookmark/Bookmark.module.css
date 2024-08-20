@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #1e1e1e;
+    --container-bg-color: #282828;
+    --text-color: #dcdcdc;
+    --input-bg-color: #333;
+    --input-border-color: #444;
+    --button-bg-color: #e63946;
+    --button-hover-bg-color: #d62839;
+    --table-header-bg-color: #333;
+    --table-row-border-color: #444;
+    --visit-btn-bg-color: #4caf50;
+    --visit-btn-hover-bg-color: #45a049;
+    --delete-btn-bg-color: #f44336;
+    --delete-btn-hover-bg-color: #e53935;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.inputForm {
+    margin-bottom: 20px;
+}
+
+.inputForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.inputForm input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.bookmarkTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bookmarkTable th, .bookmarkTable td {
+    padding: 10px;
+    border-bottom: 1px solid var(--table-row-border-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.bookmarkTable th {
+    background-color: var(--table-header-bg-color);
+}
+
+.visitBtn, .deleteBtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.visitBtn {
+    background-color: var(--visit-btn-bg-color);
+    color: white;
+}
+
+.visitBtn:hover {
+    background-color: var(--visit-btn-hover-bg-color);
+}
+
+.deleteBtn {
+    background-color: var(--delete-btn-bg-color);
+    color: white;
+}
+
+.deleteBtn:hover {
+    background-color: var(--delete-btn-hover-bg-color);
+}
